@@ -1,0 +1,247 @@
+body {
+	margin: 0;
+	font-family: "Helvetica";
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+}
+
+.topbar {
+	height:30px;	
+	background-color: #7fceed;
+}
+
+.menutop{
+	float: right;
+	margin-right: 50px;
+}
+
+.welcome{
+	color: #fff;
+	font-size: 12px;
+	padding-top: 8px;
+}
+
+.welcome a{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.welcome a:hover{
+	color: #fff;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+/*.userlogo{
+	width: 10px;
+	height: 10px;
+	background-image: url(media/userlogo.png);
+	background-size: cover;
+}*/
+
+/* ------> DASH <------ */
+
+.content {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 100px;
+}
+
+/*.content div{
+	display: inline-block;
+}*/
+
+.col1 {
+	position:absolute;
+	left:0;
+	width: 250px;
+}
+
+.alertas{
+	background-color: #eeeced;
+	height: 400px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: #dad8d9;
+	border-width: 1px;
+}
+
+.titalertas{
+	width:100%;
+	height: 40px;
+	background-color: #007eb9;
+	color: #fff;
+	font-size: 13.5px;
+	text-decoration: none;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dad8d9;
+	border-bottom-width: 1px;
+	text-align: center;
+}
+
+.titalertas p{
+	margin: 0;
+	padding-top: 12px;
+	letter-spacing: 0.4px;
+	font-weight: lighter;
+}
+
+.col2 {
+	width: 500px;
+	margin-left: 400px;
+
+}
+
+.cal{
+	background-color: #eeeced;
+	height: 400px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: #dad8d9;
+	border-width: 1px;
+}
+
+.titcal{
+	width:100%;
+	height: 40px;
+	background-color: #007eb9;
+	text-decoration: none;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dad8d9;
+	border-bottom-width: 1px;
+}
+
+.mes{
+	width:100%;
+	height: 40px;
+	background-color: #eae9e7;
+	border-bottom-style: solid;
+	border-bottom-color: #dad8d9;
+	border-bottom-width: 1px;
+
+}
+
+.col1 input, .col2 input {
+	margin-top: 25px;
+	float:right;
+	color: #fff;
+	width: 125px;
+	height: 25px;
+	margin-left: 25px;
+	border: none;
+	background-color: #7fceed;
+	border-radius: 2px;
+	font-size: 10px;
+	letter-spacing: 0.4px;
+
+}
+
+.col1 input:hover, .col2 input:hover {
+	background-color: #007eb9;
+}
+
+/* ------> adicionar reunião/ata <--------*/
+
+.col_add {
+	width:600px;
+	margin: 0 auto;
+}
+
+.add {
+	width: 600px;
+	background-color: #eeeced;
+	height: 400px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: #dad8d9;
+	border-width: 1px;
+}
+
+.tit_add {
+	width:100%;
+	height: 40px;
+	background-color: #007eb9;
+	color: #fff;
+	font-size: 13.5px;
+	text-decoration: none;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dad8d9;
+	border-bottom-width: 1px;
+	text-align: center;
+}
+
+.tit_add p {
+	margin:0;
+	padding-top: 12px;
+	letter-spacing: 0.4px;
+	font-weight: lighter;
+}
+
+.insert_add {
+	width:100%;
+	height: 80px;
+	background-color: #eae9e7;
+	border-bottom-style: solid;
+	border-bottom-color: #dad8d9;
+	border-bottom-width: 1px;
+
+}
+
+.add textarea{
+	width: 400px;
+	height: 170px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: #dad8d9;
+	border-width: 1px;
+	background-color: #eeeced;
+	color:#565555;
+	margin-left: 100px;
+	margin-top:30px;
+}
+
+.anexo {
+	color:black;
+	margin-top:20px;
+	margin-left: 15px;
+	font-size: 13.5px;
+}
+
+.anexo input {
+	margin-left: 35px;
+}
+
+
+.enviar input {
+	margin-top: 25px;
+	float:right;
+	color: #fff;
+	width: 125px;
+	height: 25px;
+	margin-left: 25px;
+	border: none;
+	background-color: #7fceed;
+	border-radius: 2px;
+	font-size: 10px;
+	letter-spacing: 0.4px;
+
+}
+
+.enviar input:hover {
+	background-color: #007eb9;
+}
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="content">
+	<div class="logo"></div>
+	<div class="login">
+
+		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  			<div class = "mail"> <%= f.email_field :email, :autofocus => true, placeholder: "Insira o E-mail" %> <div class="userlogo"></div> </div>
+  			<div class = "pass"> <%= f.password_field :password, placeholder: "Insira a Palavra-passe" %> <div class="passlogo"></div> </div>
+
+      </div>
+
+  			<% if devise_mapping.rememberable? -%>
+   				<div class = "remember-me"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+ 			  <% end -%>
+<div class="login">
+  			<div class = "iniciar"><%= f.submit "Iniciar Sessão" %></div>
+  			<div class = "recuperar"><p><%= link_to "Recuperar Password", new_password_path(resource_name) %></p></div>
+		<% end %>
+	</div>
+<!-- <%= render "devise/shared/links" %> -->
