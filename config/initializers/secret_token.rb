@@ -10,3 +10,4 @@
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
 JkProject::Application.config.secret_key_base = 'a07917b2f3cb833ca35b89f1f737d01bfbbfb46b4d0bede0bb2d607f1baaf6e8ad3b01aa2a405e98e1b79482b531a895d48a5241ad3a77792dc7bc722b1cd2d8'
+
