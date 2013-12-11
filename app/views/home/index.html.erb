@@ -1,26 +1,20 @@
-<div class="main">
-		<div class="topbar">
-			<div class="userlogo"></div>
-			<div class="menutop">
-				<div class="welcome">
-					Bem vindo, <b> <%= current_user.email %> </b> | <a> <%= link_to "Terminar Sessão", destroy_user_session_path, :method => :delete %> </a>
-				</div>
-			</div>
+<div class="content">
+	<div class="col1">
+		<div class="alertas">
+			<div class="titalertas"><p>Alertas</p></div>
 		</div>
-		<div class="content">
-			<div class="col1">
-				<div class="alertas">
-					<div class="titalertas"><p>Alertas</p></div>
-				</div>
-				<input type="submit" value="Ver Mais">
-			</div>
-			<div class="col2">
-				<div class="cal">
-					<div class="titcal"></div>
-					<div class="mes"></div>
-				</div>
-				<input type="submit" value="Convocar Reunião">
-				<input type="submit" value="Adicionar Acta">				
-			</div>
+		<input type="submit" value="Ver Mais" class="btn">
+	</div>
+	<div class="col2">
+		<div class="cal">
+			<div class="titcal"></div>
+			<div class="mes"></div>
 		</div>
+		<!--<input type="submit" value="Convocar Reunião">-->
+		<div class="btn"><p><%= link_to 'Convocar Reunião', new_meeting_path %></p></div>
+
+		<div class="btn"><p><%# link_to 'Adicionar Actas', new_record_path %></p></div>				
+	</div>
 </div>
+
+				

@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JkProject</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>JkProject</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
 </head>
-
-
 <body>
-		<% if user_signed_in? %>
-			<%= yield %>
-		<% else %>
-			<%= yield %>
-		<%end%>
-		<p class="notice"><%= notice %></p>
-    	<p class="alert"><%= alert %></p>
+	<% if user_signed_in? %>
+	<div class="main">
+		<div class="topbar">
+			<div class="menutop">
+				<div class="welcome">
+					Bem vindo, <b> <%= current_user.email %> </b> | <a> <%= link_to "Terminar Sessão", destroy_user_session_path, :method => :delete %> </a>
+				</div>
+			</div>
+		</div>
+		<%= yield %>
+	</div>
+	<% else %>
+		<%= yield %>
+	<%end%>
+
+	<!--<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>-->
 </body>
 </html>

@@ -3,6 +3,90 @@ body {
 	font-family: "Helvetica";
 }
 
+/* LOGIN <---------- */
+
+.col-login{
+	max-width: 200px;
+	margin: 75px auto;
+}
+
+.logo{
+	width: 105px;
+	height: 110px;
+	margin: 100px auto 100px auto;
+	background-image:url('logo-01.png');
+	background-size: cover;
+}
+
+.login{
+	display: block;
+}
+
+.login input{
+	border-style: solid;
+	border-color: #dad8d9;
+	border-width: 1px;
+	background-color: #eeeced;
+	width: 190px;
+	height: 25px;
+	color:#565555;
+}
+
+.mail input{
+	border-bottom: 0;
+	padding-left: 10px;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.pass input{
+	padding-left: 10px;
+	border-bottom-right-radius:2px;
+	border-bottom-left-radius:2px;
+}
+
+.iniciar{
+	width: 200px;
+    margin-top: 40px;
+}
+
+.iniciar input{
+	color: #fff;
+	width: 125px;
+	height: 25px;
+	margin-left: 37.5px;
+	border: none;
+	background-color: #7fceed;
+	border-radius: 2px;
+}
+
+.iniciar input:hover{
+	background-color: #007eb9;
+}
+
+.recuperar{
+	margin-top: 20px;
+	color: #7fceed;
+	text-align: center;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+.recuperar:hover{
+	color:#007eb9;
+	text-decoration: underline;
+}
+
+/* MAIN <------------------- 
+
+----------------COMUM A TODAS EXCEPTO LOGIN------------------ 
+MAIN DIV
+TOPBAR
+WELCOME
+USER
+LOGOUT
+ */
+
 .main {
 	width: 100%;
 	height: 100%;
@@ -43,7 +127,8 @@ body {
 	background-size: cover;
 }*/
 
-/* ------> DASH <------ */
+/* ------> DASH 
+PAGINA INCIAL, ALERTAS CALENDARIO!!!<------ */
 
 .content {
 	width: 900px;
@@ -130,7 +215,7 @@ body {
 
 }
 
-.col1 input, .col2 input {
+.col1 .btn, .col2 .btn {
 	margin-top: 25px;
 	float:right;
 	color: #fff;
@@ -145,11 +230,12 @@ body {
 
 }
 
-.col1 input:hover, .col2 input:hover {
+.col1 .btn:hover, .col2 .btn:hover {
 	background-color: #007eb9;
 }
 
-/* ------> adicionar reunião/ata <--------*/
+/* ------> pagina adicionar reunião/ata
+PAGINA MODELO ACTA REUNIAO <--------*/
 
 .col_add {
 	width:600px;
