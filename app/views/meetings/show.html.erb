@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<p>Data: <%= @meeting.data %> <br/>
+Assunto: <%= @meeting.assunto %> <br/>
+Ordem de Trabalhos: <%= @meeting.desc %> </p>
 <%= link_to 'Edit', edit_record_path(@meeting) %> |
 <%= link_to 'Back', records_path %>
