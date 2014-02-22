@@ -18,6 +18,7 @@
     <div class="insert_add">
       <%= f.text_field :assunto, placeholder:"assunto" %>
       <%= f.datetime_select :data %>
+      <%= f.collection_select :dep_id, Dep.all, :id, :name %>
     </div>
 
     <p>Ordem de trabalhos:</p>

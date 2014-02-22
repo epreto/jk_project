@@ -12,12 +12,25 @@
 
   <tbody>
     <% @meetings.each do |meeting| %>
+    <th>
       <tr>
-        <td> Assunto: <%= meeting.assunto %> || Ordem de trablhos: <%= meeting.desc %> || Data: <%=meeting.data %> </td>
+        <td>Assunto</td>
+        <td>Ordem de trablhos</td>
+        <td>Data</td>
+        <td>Departamento</td>
+      </tr>
+    </th>
+    <tbody>
+      <tr>
+        <td> <%= meeting.assunto %> </td>
+        <td> <%= meeting.desc %> </td>
+        <td> <%= meeting.data %> </td>
+        <td> <%= meeting.dep.try(:name) %> </td>
         <td><%= link_to 'Show', meeting %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
         <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    </tbody>
     <% end %>
   </tbody>
 </table>
