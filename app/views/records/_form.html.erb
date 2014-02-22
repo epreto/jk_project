@@ -13,7 +13,7 @@
 <div class="col_add">
 	<div class="add">
 	<div class="tit_add"><p>Actas</p></div>
-  <%= f.text_field :text %></div>
+  <%= f.text_field :text, :placeholder => "Inserir Acta...", :autofocus => true, :class => "insere_ata" =%></div>
   
   <%= f.submit "Adicionar Acta"%>
 <%= link_to 'Voltar', home_index_path, class: "btn" %></div>
