@@ -1,18 +1,32 @@
 <%= form_for(@meeting) do |f| %>
-  <% if @meeting.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
-      
-      <ul>
-      <% @meeting.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<% if @meeting.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
+
+  <ul>
+    <% @meeting.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="col_add">
+  <div class="add">
+    <div class="tit_add"><p>Convocar Reunião</p></div>
+
+    <div class="insert_add">
+      <%= f.text_field :assunto, placeholder:"assunto" %>
+      <%= f.datetime_select :data %>
     </div>
-  <% end %>
-  <p>assunto</p>
-  <%= f.text_field :assunto %> 
-  <div class="actions">
-    <%= f.submit %>
+
+    <p>Ordem de trabalhos:</p>
+    <%= f.text_field :desc %>
   </div>
+  <div class="right">
+    <%= f.submit "Adicionar Reunião"%>
+    <%= link_to 'Voltar', home_index_path, class: "btn" %>
+  </div>
+</div>
+
 <% end %>

@@ -9,6 +9,7 @@ JkProject::Application.routes.draw do
   root 'home#index'
 
   resources :meetings
+  resources :records
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

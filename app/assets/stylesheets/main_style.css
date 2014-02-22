@@ -22,12 +22,18 @@ body {
 	display: block;
 }
 
+.login p{
+	text-align: center;
+	font-size: 13px;
+	color:#dad8d9;
+}
+
 .login input{
 	border-style: solid;
 	border-color: #dad8d9;
 	border-width: 1px;
 	background-color: #eeeced;
-	width: 190px;
+	width: 171px;
 	height: 25px;
 	color:#565555;
 }
@@ -39,10 +45,48 @@ body {
 	border-top-left-radius:2px;
 }
 
+.mail_s input{
+	padding-left: 10px;
+	border-top-right-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.userblue{
+	height:27px;
+	width:15px;
+	background-color: #7fceed; 
+	float: right;
+	margin-top: -27px;
+	border-top-right-radius: 2px;
+}
+
+
+.userlogo { 
+	background: #000
+	url(http://i.imgur.com/yeEafuK.png) 
+	no-repeat 160px 7px;
+}
+
 .pass input{
 	padding-left: 10px;
 	border-bottom-right-radius:2px;
 	border-bottom-left-radius:2px;
+}
+
+.passblue{
+	height:27px;
+	margin-left: 20px;
+	width:15px;
+	background-color: #7fceed; 
+	float: right;
+	margin-top: -28px;
+	border-bottom-right-radius: 2px;
+}
+
+.passlogo{ 
+	background: #000
+	url(http://i.imgur.com/0sxpIbn.png) 
+	no-repeat 160px 7px;
 }
 
 .iniciar{
@@ -60,7 +104,28 @@ body {
 	border-radius: 2px;
 }
 
+
 .iniciar input:hover{
+	background-color: #007eb9;
+}
+
+.iniciar_s{
+	width: 200px;
+    margin-top: 40px;
+}
+
+.iniciar_s input{
+	color: #fff;
+	width: 210px;
+	height: 25px;
+	margin-left: -5px;
+	border: none;
+	background-color: #7fceed;
+	border-radius: 2px;
+}
+
+
+.iniciar_s input:hover{
 	background-color: #007eb9;
 }
 
@@ -90,10 +155,11 @@ LOGOUT
 .main {
 	width: 100%;
 	height: 100%;
+	min-width: 900px;
 }
 
 .topbar {
-	height:30px;	
+	height:40px;	
 	background-color: #7fceed;
 }
 
@@ -105,12 +171,12 @@ LOGOUT
 .welcome{
 	color: #fff;
 	font-size: 12px;
-	padding-top: 8px;
+	padding-top: 13px;
 }
 
 .welcome a{
 	color: #fff;
-	font-size: 12px;
+	font-size: 13px;
 	text-decoration: none;
 }
 
@@ -215,8 +281,11 @@ PAGINA INCIAL, ALERTAS CALENDARIO!!!<------ */
 
 }
 
-.col1 .btn, .col2 .btn {
+.btn{
+	text-decoration: none;
+	text-align: center;
 	margin-top: 25px;
+	padding-top: 10px;
 	float:right;
 	color: #fff;
 	width: 125px;
@@ -225,12 +294,11 @@ PAGINA INCIAL, ALERTAS CALENDARIO!!!<------ */
 	border: none;
 	background-color: #7fceed;
 	border-radius: 2px;
-	font-size: 10px;
+	font-size: 11px;
 	letter-spacing: 0.4px;
-
 }
 
-.col1 .btn:hover, .col2 .btn:hover {
+.btn:hover {
 	background-color: #007eb9;
 }
 
@@ -240,6 +308,7 @@ PAGINA MODELO ACTA REUNIAO <--------*/
 .col_add {
 	width:600px;
 	margin: 0 auto;
+	margin-top: 100px;
 }
 
 .add {
@@ -329,5 +398,29 @@ PAGINA MODELO ACTA REUNIAO <--------*/
 }
 
 
+.right {
+	float: right;
+}
+
+input[type=submit] {
+	margin-top: 25px;
+	float:right;
+	color: #fff;
+	width: 125px;
+	height: 35px;
+	margin-left: 25px;
+	border: none;
+	background-color: #7fceed;
+	border-radius: 2px;
+	font-size: 11px;
+	letter-spacing: 0.4px;
+	display: inline;
+	cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+	background-color: #007eb9;
+}
 
 
