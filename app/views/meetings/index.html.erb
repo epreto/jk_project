@@ -1,4 +1,5 @@
-<h1>Listing meetings</h1>
+<h1>Reuniões</h1>
+<%= link_to 'Actas', records_path %>
 
 <table>
   <thead>
@@ -12,6 +13,7 @@
   <tbody>
     <% @meetings.each do |meeting| %>
       <tr>
+        <td> Assunto: <%= meeting.assunto %> || Ordem de trablhos: <%= meeting.desc %> || Data: <%=meeting.data %> </td>
         <td><%= link_to 'Show', meeting %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
         <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +24,8 @@
 
 <br>
 
-<%= link_to 'New Meeting', new_meeting_path %>
+<%= link_to 'Voltar', home_index_path %>
+<%= link_to 'Nova Reuniao', new_meeting_path %>
+
+
+

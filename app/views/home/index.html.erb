@@ -1,9 +1,9 @@
 <div class="content">
 	<div class="col1">
 		<div class="alertas">
-			<div class="titalertas"><p>Alertas</p></div>
+			<div class="titalertas"><p>ALERTAS</p></div>
 		</div>
-		<input type="submit" value="Ver Mais" class="btn">
+		<%= link_to 'Ver mais', meetings_path, class: "btn" %>
 	</div>
 	<div class="col2">
 		<div class="cal">
@@ -11,10 +11,10 @@
 			<div class="mes"></div>
 		</div>
 		<!--<input type="submit" value="Convocar Reunião">-->
-		<div class="btn"><p><%= link_to 'Convocar Reunião', new_meeting_path %></p></div>
+		<%= link_to 'Convocar Reunião', new_meeting_path, class: "btn" %>
 
-		<div class="btn"><p><%# link_to 'Adicionar Actas', new_record_path %></p></div>				
-	</div>
+		<%= link_to 'Adicionar Actas', new_record_path, class: "btn" %>			
+	</div>	
 </div>
 
 				
