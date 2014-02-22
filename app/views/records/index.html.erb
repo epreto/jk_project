@@ -1,28 +1,17 @@
-<h1>Actas</h1>
-<%= link_to 'Reuniões', meetings_path %>
-
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @records.each do |record| %>
-      <tr>
-        <td> Acta: <%= record.text %> </td>
-        <td><%= link_to 'Show', record %></td>
-        <td><%= link_to 'Edit', edit_record_path(record) %></td>
-        <td><%= link_to 'Destroy', record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Record', new_record_path %>
-<%= link_to 'Voltar', home_index_path %>
+<div class="showviews">
+  <div class="showviews-main">
+    <div class="showviews-title">
+      <p>Actas</p>
+    </div>
+<% @records.each do |record| %>
+<div class="showviews-inner">
+  <p><strong>Acta:</strong> <%= record.text %>
+  <%= link_to 'Ver', record %>
+  <%= link_to 'Editar', edit_record_path(record) %>
+  <%= link_to 'Apagar', record, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+<% end %>
+</div>
+<div class="btnviews"><%= link_to 'Reuniões', meetings_path %></div>
+<div class="btnviews"><%= link_to 'Inserir Acta', new_record_path %></div>
+<div class="btnviews"><%= link_to 'Voltar', home_index_path %></div>
